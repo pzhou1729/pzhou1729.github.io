@@ -1,6 +1,6 @@
 # pzhou1729.github.io
 
-Personal website for Phillip Zhou, built with plain HTML/CSS/JS (no build step) and deployed via GitHub Pages.
+Personal website, built with plain HTML/CSS/JS (no build step) and deployed via GitHub Pages.
 
 ## Structure
 
