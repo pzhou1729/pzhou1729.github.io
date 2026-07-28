@@ -1,0 +1,8 @@
+.DS_Store
+.claude/
+
+# Original source files (kept locally, not needed in the published site —
+# the working copies live under assets/)
+/072826_personal_website.docx
+/LDLR_graphical_abstract.png
+/Phillip_Zhou_CV_July_2026_Abbreviated.pdf
