@@ -69,6 +69,7 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 1100px;
 }
 
 .brand {
@@ -77,11 +78,12 @@ a:hover { text-decoration: underline; }
   font-size: 1.15rem;
   color: var(--text);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .site-nav {
   display: flex;
-  gap: 28px;
+  gap: 24px;
 }
 
 .site-nav a {
@@ -91,6 +93,7 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.01em;
   padding: 6px 0;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 
 .site-nav a:hover,
@@ -315,8 +318,10 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
 }
 
-/* Mobile */
-@media (max-width: 700px) {
+/* Nav switches to the hamburger menu earlier than the general mobile
+   breakpoint below — with 7 links plus the brand name, it needs more
+   room than a single column of body text does to stay on one line. */
+@media (max-width: 860px) {
   .nav-toggle { display: flex; }
 
   .site-nav {
@@ -345,7 +350,10 @@ a:hover { text-decoration: underline; }
     border-left-color: var(--accent);
     background: var(--bg-alt);
   }
+}
 
+/* Mobile */
+@media (max-width: 700px) {
   .hero { padding: 64px 0 48px; }
   .section { padding: 52px 0; }
 }
